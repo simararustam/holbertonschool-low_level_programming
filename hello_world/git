@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m 'C - Hello, World/ Task-1'
+git push
