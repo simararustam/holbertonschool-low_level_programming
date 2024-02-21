@@ -10,14 +10,13 @@ char alph = 'a';
 
 while (alph <= 'z')
 {
-	if (alph == 'q' && alph == 'e')
+	if (alph != 'q' && alph != 'e')
 	{
-	continue;
+	putchar(alph);
 	}
-putchar(alph);
 
-alph++;
+	alph++;
 }
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
