@@ -2,16 +2,18 @@
 
 /**
  * main - check the code
- * Return: Always 0 
+ * Return: Always 0
  */
 
 void print_alphabet(void)
 {
-	int i = '97';
+	char a[] = "abcdefghijklmnopqrstuvwxyz\n";
 
-	while (i <= '122' )
+	int i = 0;
+
+	while (a[i] != '\n')
 	{
-		_putchar(i);
+		_putchar(a[i]);
 		i++;
 	}
 }
