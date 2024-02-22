@@ -9,17 +9,20 @@
 
 void print_alphabet_x10(void)
 {
-	char a[] = "abcdefghijklmnopqrstuvwxyz\n";
+	char letter;
 
-	int i = 0, j = 0;
+	int i = 0;
 
-	while (j <= 9)
+	while (i <= 9)
 	{
-	while (a[i] != '\0')
-	{
-		_putchar(a[i]);
+	letter = 'a';
+		while (letter <= 'z')
+		{
+			_putchar(letter);
+			letter++;
+		}
+		_putchar('\n');
 		i++;
-	}
 	}
 
 }
