@@ -11,7 +11,9 @@ void print_alphabet(void)
 
 	int i = 0;
 
-	while (i != '\0')
+	int aLength = sizeof a / sizeof a[0]
+
+	while (i <= aLength)
 	{
 		_putchar(a[i]);
 		i++;
