@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
  *main - entry pont
  *
@@ -8,7 +7,15 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	char b[] = "_putchar\n";
+
+	int i = 0;
+
+	while (b[i] != '\0')
+	{
+		_putchar(b[i]);
+		i++;
+	}
 
 	return (0);
 }
