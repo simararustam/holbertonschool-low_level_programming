@@ -1,5 +1,5 @@
 int _putchar(char a);
-int print_alphabet()
+void print_alphabet(void)
 {
-print("abcdefghijklmnopqrstuvwxyz");
+putchar("abcdefghijklmnopqrstuvwxyz");	
 }
