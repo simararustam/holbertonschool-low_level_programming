@@ -2,12 +2,21 @@
 
 /**
  * main - check the code
- *
  * Return: Always 0.
+ * print_alphabet: is a function
  */
-int main(void)
+
+void print_alphabet(void)
 {
-	print_alphabet();
+	char a[] = "abcdefghijklmnopqrstuvwxyz";
+
+	int i = 0;
+
+	while (i != '\n')
+	{
+		putchar(a[i]);
+		i++;
+	}
 
 	return (0);
 }
