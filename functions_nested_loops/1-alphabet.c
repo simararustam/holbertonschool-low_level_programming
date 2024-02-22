@@ -14,9 +14,7 @@ void print_alphabet(void)
 
 	while (i != '\n')
 	{
-		putchar(a[i]);
+		_putchar(a[i]);
 		i++;
 	}
-
-	return (0);
 }
