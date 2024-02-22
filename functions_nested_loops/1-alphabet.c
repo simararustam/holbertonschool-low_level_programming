@@ -7,8 +7,8 @@
 
 void print_alphabet(void)
 {
-	char a[] = "abcdefghijklmnopqrstuvwxyz";
-i
+	char a[] = "abcdefghijklmnopqrstuvwxyz\n";
+
 	int i = 0;
 
 	while (i != '\0')
