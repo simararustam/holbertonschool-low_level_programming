@@ -3,7 +3,7 @@
 /**
  * print_sign - entry point
  * Description: This function prints the alphabet, in lowercase
- * @c: entry parametr
+ * @n: entry parametr
  * main - check the code
  * Return: Always 0
  */
@@ -11,15 +11,13 @@
 
 int print_sign(int n)
 {
-	if (n > 0){
+	if (n > 0)
 	return (1);
-	}
-	else if (n == 0){
+	else if (n == 0)
 	return (0);
-	}
-	else{
+	else
 	return (-1);
-	}
+
 
 	return (0);
 }
