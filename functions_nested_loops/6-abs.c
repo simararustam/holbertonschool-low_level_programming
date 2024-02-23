@@ -19,6 +19,6 @@ int _abs(int x)
 	}
 	else
 	{
-	printf("%d\n", x);	
+	printf("%d\n", x);
 	}
 }
