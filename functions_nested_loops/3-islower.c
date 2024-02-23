@@ -10,13 +10,12 @@
 
 int _islower(int c)
 {
-	int r = 'a';
 
-	if (_islower(r))
+	if (c >= 'a' && c <= 'z')
 	{
-	_putchar('1');
+	_putchar('0');
 	}
-	else
+	else if (c >= 'A' && c <= 'Z')
 	{
 	_putchar('0');
 	}
