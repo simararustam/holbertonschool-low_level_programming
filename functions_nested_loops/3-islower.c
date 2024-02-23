@@ -11,11 +11,11 @@
 int _islower(int c)
 {
 
-	if (c >= 'a' && c <= 'z')
+	if (c >= 97 && c <= 122)
 	{
 	_putchar('1');
 	}
-	else if (c >= 'A' && c <= 'Z')
+	else
 	{
 	_putchar('0');
 	}
