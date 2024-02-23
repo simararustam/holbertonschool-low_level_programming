@@ -17,7 +17,7 @@ int _islower(int c)
 	}
 	else if (c >= 'A' && c <= 'Z')
 	{
-	_putchar('0');
+	_putchar('1');
 	}
 
 	return (0);
