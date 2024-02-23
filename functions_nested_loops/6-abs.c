@@ -14,10 +14,11 @@ int _abs(int x)
 
 	if (x < 0)
 	{
-	return (-x);
+	x = x * (-1);
+	printf("%d\n", x);
 	}
 	else
 	{
-	return (x);
+	printf("%d\n", x);	
 	}
 }
