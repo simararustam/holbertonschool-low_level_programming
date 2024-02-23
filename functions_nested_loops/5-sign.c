@@ -12,11 +12,20 @@
 int print_sign(int n)
 {
 	if (n > 0)
+	{
 	return (1);
+	print("+");
+	}
 	else if (n == 0)
+	{
 	return (0);
+	print("0");
+	}
 	else
+	{
 	return (-1);
+	print("-");
+	}
 
 
 	return (0);
