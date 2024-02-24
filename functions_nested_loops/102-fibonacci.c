@@ -10,17 +10,13 @@ int main(void)
 {
 	int a = 1, b = 2, sum, i;
 
-	printf("%d, %d, ", a, b);
+	printf("%d, %d", a, b);
 
 	for (i = 1; i < 49; i++)
 	{
 		sum = a + b;
-		printf("%d", sum);
-		if (i == 48)
-		{
-			break;
-		}
-		printf(", ");
+		printf(", %d", sum);
+
 		a = b;
 		b = sum;
 	}
