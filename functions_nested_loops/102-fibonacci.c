@@ -20,4 +20,6 @@ int main(void)
 		b = sum;
 	}
 	printf("\n");
+
+	return (0);
 }
