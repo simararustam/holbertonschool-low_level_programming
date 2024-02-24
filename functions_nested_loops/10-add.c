@@ -3,6 +3,7 @@
  * add - entry point
  * Description: This function prints the alphabet, in lowercase
  * @x: entry parametr
+ * @y: entry point
  * main - check the code
  * Return: Always 0
  */
