@@ -15,6 +15,10 @@ int main(void)
 	for (i = 1; i <= 48; i++)
 	{
 		sum = a + b;
+		if (i == 48)
+		{
+			break;
+		}
 		printf("%d, ", sum);
 		a = b;
 		b = sum;
