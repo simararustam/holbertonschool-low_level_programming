@@ -20,7 +20,7 @@ int main(void)
 		a = b;
 		b = sum;
 	}
-	printf("\n");
+	printf("\n\n");
 
 	return (0);
 }
