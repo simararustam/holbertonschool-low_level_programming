@@ -9,7 +9,7 @@
 int main(void)
 {
 	unsigned long a = 1, b = 2, sum;
-       int i;
+	int i;
 
 	printf("%ld, %ld", a, b);
 
@@ -21,7 +21,7 @@ int main(void)
 		a = b;
 		b = sum;
 	}
-	printf("\n\n");
+	printf("\n");
 
 	return (0);
 }
