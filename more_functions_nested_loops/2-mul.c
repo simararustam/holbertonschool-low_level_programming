@@ -11,11 +11,11 @@
 
 int mul(int a, int b)
 {
-	int sum;
+	unsigned long sum;
 
 	sum = a * b;
 
-	printf("%d", sum);
+	printf("%ld", sum);
 
 	return (0);
 }
