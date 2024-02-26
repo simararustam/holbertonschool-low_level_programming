@@ -11,11 +11,5 @@
 
 int mul(int a, int b)
 {
-	unsigned long sum;
-
-	sum = a * b;
-
-	printf("%ld", sum);
-
-	return (0);
+	return (a * b);
 }
