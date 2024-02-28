@@ -13,7 +13,6 @@ void rev_string(char *s)
 		lastindex = i;
 	}
 
-	if (lastindex != 0)
 	{
 		for (j = 0; j <= lastindex / 2; j++)
 		{
