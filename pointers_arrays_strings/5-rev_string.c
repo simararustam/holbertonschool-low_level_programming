@@ -13,10 +13,13 @@ void rev_string(char *s)
 		lastindex = i;
 	}
 
+	if (lastindex != 0)
+	{
 	for (j = 0; j <= lastindex / 2; j++)
 	{
 		rev = s[j];
 		s[j] = s[lastindex - j];
 		s[lastindex - j] = rev;
+	}
 	}
 }
