@@ -1,4 +1,6 @@
 #include "main.h"
+#include <string.h>
+#include <stdlib.h>
 #include <stdio.h>
 /**
  *_strcat - entry point
@@ -9,33 +11,17 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, j = 0, result[11];
+	char *result = malloc(strlen(dest) + strlen(src) + 1);
+	int i = 0;
 
-	while (dest[i] != '\0')
-	{
-		result[j] = dest[i];
-		i++;
-		j++;
-	}
-
-	i = 0;
-
-	while (src[i] != '\0')
-	{
-		result[j] = src[i];
-		i++;
-		j++;
-	}
-
-	i = 0;
+	strcpy(result, dest);
+	strcat(result, src);
 
 	while (result[i] != '\0')
 	{
 		dest[i] = result[i];
 		i++;
 	}
-
-	dest[i] = '\0';
 
 	return (dest);
 }
