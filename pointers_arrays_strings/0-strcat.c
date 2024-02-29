@@ -12,7 +12,7 @@
 char *_strcat(char *dest, char *src)
 {
 	int i = 0, j = 0;
-	char *result = malloc(strlen(dest) + strlen(src) + 1);
+	char *result = malloc(sizeof(dest) + sizeof(src));
 
 	while (dest[i] != '\0')
 	{
