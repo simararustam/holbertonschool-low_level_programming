@@ -10,7 +10,7 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int a = *s1 - *s2;
+	int a = strcmp(s1, s2);
 
 	return (a);
 }
