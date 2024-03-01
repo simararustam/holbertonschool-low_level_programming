@@ -12,42 +12,24 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0, j = 0;
 	char *result = malloc(sizeof(dest) + sizeof(src));
-	char second[n];
 
-	while (dest[i] != '\0')
+	result = dest;
+
+	while (*dest != '\0')
 	{
-		result[j] = dest[i];
-		i++;
-		j++;
+		dest++;
 	}
 
-	i = 0;
-	for (i = 0; i < n; i++)
+	while (*src != 0 && n > 0)
 	{
-		second[i] = src[i];
-	}
-	if (sizeof(src) < n)
-	{
-		second[i] = '\0';
+		*dest = *src;
+		dest++;
+		src++;
+		n--;
 	}
 
-	i = 0;
-	while (second[i] != '\0')
-	{
-		result[j] = second[i];
-		i++;
-		j++;
-	}
+	*dest = '\0';
 
-	i = 0;
-	while (result[i] != '\0')
-	{
-		dest[i] = result[i];
-		i++;
-	}
-	dest[i] = '\0';
-
-	return (dest);
+	return (result);
 }
