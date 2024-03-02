@@ -10,13 +10,12 @@
 
 void reverse_array(int *a, int n)
 {
-	int i;
-	char *result = malloc(sizeof(a));
+	int i, result;
 
 	for (i = 0; i < n / 2; i++)
 	{
-		result[i] = a[i];
+		result = a[i];
 		a[i] = a[n - 1 - i];
-		a[n - 1 - i] = result[i];
+		a[n - 1 - i] = result;
 	}
 }
