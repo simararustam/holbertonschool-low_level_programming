@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include "main.h"
 /**
  *print_number - entry point
  *@n: integer
