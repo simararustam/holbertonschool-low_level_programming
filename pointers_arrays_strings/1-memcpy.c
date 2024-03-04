@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *_memdest - entry point
+ *_memcpy - entry point
  *Return: 0 succes
  *@dest: pntr
  *@src: pntr
