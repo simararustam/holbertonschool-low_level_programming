@@ -24,4 +24,5 @@ char *leet(char *);
 
 char *_memset(char *s, char b, unsigned int n);
 void print_chessboard(char (*a)[8]);
+void print_diagsums(int *a, int size);
 #endif
