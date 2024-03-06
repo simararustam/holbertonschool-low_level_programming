@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - enrty point
- * check: checker
+ * check - checker
  * @start: int
  * @n: int
  * Return: Always 0.
@@ -19,6 +18,12 @@ int check(int start, int n)
 
 	return (check(start + 1, n));
 }
+
+/**
+ * _sqrt_recursion - return the natural square root of a number n.
+ * @n: number to check for square roots.
+ * Return: the natural square root of number n
+ */
 
 int _sqrt_recursion(int n)
 {
