@@ -10,7 +10,8 @@
 int main(int argc, char *argv[])
 {
 	char c[] = "Error";
-	int i, sum;
+	int i;
+	unsigned int sum;
 
 	if (argc == 1)
 	{
