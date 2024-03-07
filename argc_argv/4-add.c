@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 /**
  *main - entry point
@@ -9,29 +10,31 @@
 
 int main(int argc, char *argv[])
 {
-	char c[] = "Error";
-	int i;
-	unsigned int sum;
+	char c[] = "Error", *array;
+	int i, j;
+	int sum = 0, res = 0;
 
-	if (argc == 1)
-	{
-		printf("0\n");
-	}
-	else if (argc > 1)
+	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) >= 48 && atoi(argv[i]) <= 57)
+			array = argv[i];
+			for (j = 0; array[j] != 0; j++)
 			{
-				sum += atoi(argv[i]);
-				printf("%d\n", sum);
+				if (array[j] <= 48 || array[j] >= 58)
+				{
+					printf("%s\n", c);
+					return (1);
+				}
+
 			}
-			if (atoi(argv[i]) >= 58 && atoi(argv[i]) <= 47)
-			{
-				printf("%s", c);
-				return (1);
-			}
+			res = atoi(argv[i]);
+			sum += res;
 		}
+			printf("%d\n", sum);
 	}
+	else
+		printf("%d\n", 0);
+
 	return (0);
 }
