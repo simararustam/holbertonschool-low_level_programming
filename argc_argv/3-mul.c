@@ -10,13 +10,15 @@
 int main(int argc, char **argv)
 {
 	unsigned int a = atoi(argv[1]) * atoi(argv[2]);
+	char c[] = "Error";
 
-	if (argc < 3)
+	if (argc != 3)
 	{
-		printf("Error\n");
+		printf("%s\n",c);
+		return (1);
 	}
 	else
-		printf("%d\n", a);
+		printf("%i\n", a);
 
 	return (0);
 }
