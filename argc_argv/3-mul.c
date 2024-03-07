@@ -9,7 +9,7 @@
 
 int main(int argc, char **argv)
 {
-	unsigned int a = atoi(argv[1]) * atoi(argv[2]);
+	int a;
 	char c[] = "Error";
 
 	if (argc != 3)
@@ -17,8 +17,9 @@ int main(int argc, char **argv)
 		printf("%s\n",c);
 		return (1);
 	}
-	else
-		printf("%i\n", a);
+
+	a = atoi(argv[1]) * atoi(argv[2]);
+	printf("%i\n", a);
 
 	return (0);
 }
