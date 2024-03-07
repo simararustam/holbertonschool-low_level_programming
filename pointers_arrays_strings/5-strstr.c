@@ -7,19 +7,24 @@
  *@needle: char
  *Return: NULL
  */
-
 char *_strstr(char *haystack, char *needle)
 {
-	int i;
+	int i, j = 0;
 
-	while (*needle)
+	while (needle[j] != '\0')
+		j++;
+
+	while (*haystack)
 	{
-		for (i = 0; haystack[i] != 0; i++)
+		for (i = 0; needle[i] != 0; i++)
 		{
-			if (*needle == haystack[i])
-				return (needle);
+			if (haystack[i] != needle[i])
+				break;
 		}
-		needle++;
+		if (i != j)
+			haystack++;
+		else
+			return (haystack);
 	}
 	return (NULL);
 }
