@@ -7,16 +7,28 @@
  */
 char *_strdup(char *str)
 {
-	char *dubli;
+	char *s;
+	int i = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	dubli = malloc(sizeof(str));
+	while (str[i] != '\0')
+		i++;
 
-	if (dubli == NULL)
+	s = malloc(i + 1);
+
+	if (s == NULL)
 		return (NULL);
 
-	dubli = str;
-	return (dubli);
+	i = 0;
+	while (str[i] != 0)
+	{
+		s[i] = str[i];
+		i++;
+	}
+
+	s[i] = '\0';
+
+	return (s);
 }
