@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *str_concat - entry point
+ * str_concat - entry point
  *@s1: 1st string
  *@s2: 2nd
- *
+ *Return: 0 succes
  */
 
 char *str_concat(char *s1, char *s2)
