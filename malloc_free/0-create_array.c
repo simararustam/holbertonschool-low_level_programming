@@ -18,13 +18,16 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	else
+	while (i < size)
 	{
-		while (i < size)
+		if (arr == NULL)
 		{
-			arr[i] = c;
-			i++;
+			printf("Can't allocate %d bytes (after %d calss)\n", size, i);
+
 		}
+		arr[i] = c;
+		i++;
 	}
+
 	return (arr);
 }
