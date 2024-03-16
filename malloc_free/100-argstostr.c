@@ -22,6 +22,8 @@ char *argstostr(int ac, char **av)
 			size++;
 			j++;
 		}
+		size++;
+		j = 0;
 	}
 
 	concat = malloc(sizeof(char) * size + 1);
