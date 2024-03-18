@@ -17,10 +17,5 @@ void print_dog(struct dog *d);
 /**
  * dog_t - typedef for strc dog
  */
-typedef struct dog
-{
-        char *name;
-        float age;
-        char *owner;
-}dog_t;
+typedef struct dog dog_t;
 #endif
