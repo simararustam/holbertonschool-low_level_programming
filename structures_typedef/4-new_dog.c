@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- *
- *
- *
- *
+ *new_dog - func name
+ *@name: name
+ *@age: age
+ *@owner: owner
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -19,5 +19,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	my_dog->age = age;
 	my_dog->owner = owner;
 
+	free(my_dog);
 	return (my_dog);
 }
