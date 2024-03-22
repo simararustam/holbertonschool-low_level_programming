@@ -7,7 +7,7 @@
  * @argv: elements of args
  * Return: 0 succes
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int num1, num2, calc;
 	int (*op)(int, int);
@@ -19,17 +19,17 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(98);
+		return (98);
 	}
 	if (op == NULL)
 	{
 		printf("Error\n");
-		exit(99);
+		return (99);
 	}
 	if ((op == op_div && num2 == 0) || (op == op_mod && num2 == 0))
 	{
 		printf("Error\n");
-		exit(100);
+		return (100);
 	}
 
 	calc = op(num1, num2);
