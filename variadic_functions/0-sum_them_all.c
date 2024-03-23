@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include <stdarg.h>
+/**
+ * sum_them_all - var sum func
+ * @n: sumber of elem
+ * Return: sum
+ */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
