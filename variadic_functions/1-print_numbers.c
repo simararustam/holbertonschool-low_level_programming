@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- *
+ *print_numbers - print numb var func
+ *@separator: separator string
+ *@n: number of elm
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list num;
-	unsigned int i , j;
+	unsigned int i, j;
 
 	va_start(num, n);
 
