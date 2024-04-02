@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
-#include <stding.h>
 
 /**
  *list_len - number of elemments in link list
