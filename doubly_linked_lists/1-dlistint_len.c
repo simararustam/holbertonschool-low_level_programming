@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *@h: header of list
  *dlistint_len - he number of elements in a linked dlistint_t list.
+ *@h: header of list
  *Return:
  */
 size_t dlistint_len(const dlistint_t *h)
