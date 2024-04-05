@@ -22,15 +22,12 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		*head = ptr;
 	}
 	else
-	{
-	    temp = *head;
-	    
-	    while (temp != NULL)
-	    {
-		    temp = temp->next;
-	    }
-	    	temp->next = ptr;
-		ptr->prev = temp;
+	{    
+	    while (*head != NULL)
+		    (*head) = (*head)->next;
+
+	    	(*head)->next = ptr;
+		ptr->prev = (*head);
 		ptr->next = NULL;
 	}
 
