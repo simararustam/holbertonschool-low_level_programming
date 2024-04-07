@@ -9,14 +9,14 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i = 0, num = 0, len = 0;
+	unsigned int num = 0;
+	int i = 0, len = 0;
 
 	if (!b)
 		return (0);
-	while (b[i] != 0)
+	for (; b[i] != 0; i++)
 	{
 		len++;
-		i++;
 	}
 
 	while (b[i])
